@@ -40,6 +40,7 @@ mandir
 prefix
 rundir
 sysconfdir
+libdir
 rpmconfigdir
 
 m2home
@@ -76,6 +77,7 @@ test -z "${localstatedir}" && localstatedir="${prefix}/var"
 test -z "${mandir}" && mandir="${datadir}/man"
 test -z "${rundir}" && rundir="${localstatedir}/run"
 test -z "${sysconfdir}" && sysconfdir="${prefix}/etc"
+test -z "${libdir}" && libdir="${prefix}/lib"
 test -z "${rpmconfigdir}" && rpmconfigdir="${prefix}/lib/rpm"
 
 test -z "${m2home}" && m2home="${datadir}/xmvn"
